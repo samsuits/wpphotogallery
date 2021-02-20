@@ -20,30 +20,31 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define( 'DB_NAME', 'wp_photogallery' );
+define( 'DB_NAME', 'heroku_e06b7667a98a424' );
 
 /** MySQL database username */
-define( 'DB_USER', 'root' );
+define( 'DB_USER', 'b6e1795be0685e' );
 
 /** MySQL database password */
-define( 'DB_PASSWORD', 'Dermer84' );
+define( 'DB_PASSWORD', '8b3bcda5' );
 
 /** MySQL hostname */
-define( 'DB_HOST', '127.0.0.1' );
+define( 'DB_HOST', 'us-cdbr-east-03.cleardb.com' );
 
 /** Database Charset to use in creating database tables. */
 define( 'DB_CHARSET', 'utf8' );
 
 /** The Database Collate type. Don't change this if in doubt. */
 define( 'DB_COLLATE', '' );
-
+/*
 if(isset($_ENV['CLEARDB_DATABASE_URL'])) {
     $db = parse_url($_ENV['CLEARDB_DATABASE_URL']);
+    define( 'DB_NAME', 'heroku_e06b7667a98a424' );
     define('DB_NAME', trim($db['path'],'/'));
     define('DB_USER', $db['user']);
     define('DB_PASSWORD', $db['pass']);
     define('DB_HOST', $db['host']);
-} 
+} */
 
 define('FS_METHOD','direct');
 
